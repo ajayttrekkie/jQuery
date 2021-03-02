@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* ..............................Toggle Form.................................... */
+#contentWrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1%;
+  width: 80%;
+}
+#contentHeader {
+  background-color: bisque;
+  padding: 2px;
+}
+#contentHeader p {
+  color: blueviolet;
+  font-size: 30px;
+  text-align: center;
+}
+#formWrapper {
+  text-align: center;
+}
+#formWrapper h3 {
+  color: teal;
+  text-align: center;
+}
+#formWrapper form {
+  padding: 5px;
+}
+.formContent {
+  padding: 15px;
+}
+.formLabels {
+  width: 5%;
+  text-align: right;
+  display: inline-block;
+  padding-right: 20px;
+}
+.labelTop {
+  vertical-align: top;
+}
+.formFields {
+  width: 20%;
+  height: 20px;
+  text-align: left;
+}
+.textareaField {
+  height: 70px;
+}
+
+.formButton {
+  background-color: teal;
+  width: 10%;
+  height: auto;
+  border: solid thin;
+  border-color: rgb(130, 236, 236);
+  border-radius: 4%;
+  color: white;
+  cursor: pointer;
+}
+/* #formBtn:hover {
+  border-color: green;
+  background-color: rgb(130, 236, 236);
+  color: black;
+} */
+#form {
+  display: none;
+}
+#fileField {
+  display: none;
+}
+#fileLabel {
+  width: 7%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  color: teal;
+  cursor: pointer;
+}
+.saveBtn {
+  background-color: rgb(57, 160, 219);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 10%;
+}
+.resetBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 10%;
+}
+/* .....................................file preview and custom file upload................................................... */
+#imagePreviewWrapper h3 {
+  text-align: center;
+  color: teal;
+  margin-top: 30px;
+}
+#imagePreviewWrapper {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#imagePreviewedDiv {
+  display: none;
+  padding: 5px;
+  position: relative;
+}
+#previewedImage {
+  width: 30%;
+  border: thin solid teal;
+}
+#imageUpload {
+  display: none;
+}
+#imageUploadLabel {
+  width: 7%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  color: teal;
+  cursor: pointer;
+}
+#fileRemoveButton {
+  width: 3%;
+  background: rgb(138, 2, 2);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  right: 35%;
+  cursor: pointer;
+  opacity: 0;
+}
+#fileRemoveButton:hover {
+  background-color: rgb(185, 55, 55);
+}
+#imagePreviewedDiv:hover #fileRemoveButton {
+  opacity: 1;
+}
+
+/* Adding Custom Fields */
+#customFormWrapper h3 {
+  text-align: center;
+  color: teal;
+  margin-top: 30px;
+}
+#customFormWrapper {
+  text-align: center;
+}
+#customFormInnerWrapper form {
+  padding: 10px;
+}
+#userLabelDiv {
+  padding: 10px;
+}
+#customLabels {
+  width: 10%;
+  text-align: right;
+  display: inline-block;
+  padding-right: 20px;
+}
+.customFields {
+  width: 20%;
+  height: 20px;
+  text-align: left;
+}
+#customSubmitButton {
+  background-color: rgb(10, 97, 148);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 10%;
+}
+#customButtonDiv {
+  padding: 10px;
+}
+#addButton {
+  background-color: rgb(4, 82, 4);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+#customForm {
+  display: none;
+}
+#saveCustomButtonDiv {
+  padding: 10px;
+  display: none;
+}
+#saveCustomButton {
+  background-color: rgb(212, 148, 64);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+  color: white;
+}
+#saveCustomButton:hover {
+  background-color: rgb(197, 152, 94);
+}
+
+/* ..................Displaying Custom field contents...................... */
+#displayCustomFieldContentsWrapper {
+  display: None;
+}
+
+/* .......................Multiple Image Handling......................................... */
+#multipleImagePreviewDiv {
+  display: none;
+}
