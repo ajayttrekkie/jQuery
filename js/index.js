@@ -220,7 +220,7 @@ var multipleImageHandling={
                     let reader = new FileReader();
                     reader.onload=function(event){
                         $('#multipleImagePreviewDiv').show();
-                        $('#multipleImagePreviewDiv').append('<img src="'+ event.target.result + '" id="'+ multipleFileId +'">');
+                        $('#multipleImagePreviewDiv').append('<img src="'+ event.target.result + '" id="'+ multipleFileId +'"
                        $('#'+multipleFileId).css({
                                      'width':'15%',
                                      'border':'1px dashed teal',
