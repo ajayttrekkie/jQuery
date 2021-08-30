@@ -222,7 +222,7 @@ var multipleImageHandling={
                         $('#multipleImagePreviewDiv').show();
                         $('#multipleImagePreviewDiv').append('<img src="'+ event.target.result + '" id="'+ multipleFileId +'" class="mulImg"/>');
                         $('.mulImg').css({
-                                     'width':'50px',
+                                     'width':'200px',
                                      'border':'1px dashed teal',
                                  });
                     }
