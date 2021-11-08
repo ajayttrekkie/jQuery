@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilevel Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/multilevel.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12  d-flex justify-content-center">
+                <button id="addLabel" class="btn btn-success">Add label&nbsp;&nbsp;<i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
+                <form style="width: 70%;">
+                    <div id="label-box">
+                        <div id="labels_0" class="border border-info p-4 form-group mb-5 ">
+                            <input class="form-control mt-1 mb-1" type="text" name="labels[0]" id="label_input_0"
+                                placeholder="label">
+                            <button class="btn btn-danger mt-1 mb-1" id="label_remove_0">remove label&nbsp;&nbsp;<i
+                                    class="fa fa-minus"></i></button>
+                            <div class="mt-3 ml-5 mb-3 border border-warning p-3" id="values_0">
+                                <div class="form-group" id="label_values_0">
+                                    <button class="btn btn-primary mb-3" id="addValue_0">Add value&nbsp;&nbsp;<i
+                                            class="fa fa-plus"></i></button>
+                                    <div class="form-group mt-2 mb-2" id="value_divs_0_0">
+                                        <input class="form-control mt-1 mb-1" type="text" name="values[0][0]"
+                                            placeholder="value" id="value_input_0_0">
+                                        <button class="btn btn-danger mb-3" id="remove_value0_0">remove
+                                            value&nbsp;&nbsp;<i class="fa fa-minus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="btn btn-primary mb-3" id="duplicate_label_0">Duplicate
+                                Label&nbsp;&nbsp;<i class="fa fa-plus"></i></button> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
