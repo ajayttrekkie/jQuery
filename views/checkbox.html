@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>
+   
+</head>
+<body>
+    <input type="checkbox" value="1" onclick="checkSingle(this)" id="single_check_1">1
+    <input type="checkbox" value="2" onclick="checkSingle(this)" id="single_check_2">2
+    <input type="checkbox" value="3" onclick="checkSingle(this)" id="single_check_3">3
+    <input type="checkbox" value="4" onclick="checkSingle(this)" id="single_check_4">4
+    <input type="checkbox" value="5" onclick="checkSingle(this)" id="single_check_5">5
+
+    
+  
+    <div id="counters" style="margin-bottom: 1000px;">
+      <p id="counter1">0</p>
+    </div>
+    <div id="counters-scroll">
+      <p id="counter2">0</p>
+    </div>
+
+    <script>
+        // countup.js
+        $(document).ready(function(){
+           
+            const c = new countUp.CountUp("counter1", 500)
+            c.start();
+            // for scrolling
+            function isScrolledIntoView(el) {
+                var elemTop = el.getBoundingClientRect().top;
+                var elemBottom = el.getBoundingClientRect().bottom;
+
+                var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+                return isVisible;
+            }
+            $(window).on('scroll', function() {
+                if (isScrolledIntoView(document.getElementById('counters-scroll'))) {
+                    const c = new countUp.CountUp("counter2", 500)
+                    c.start();
+                }
+            });
+        });
+
+        // ckeckbox
+        var arr=[];
+        function checkSingle(own){
+            $(document).ready(function(){
+                var id = own.id;
+                var value = own.value;
+            if($('#'+id).is(':checked')){
+              arr.push(value);
+            }else{
+                arr.splice( $.inArray(value, arr), 1 );
+            }
+            console.log(arr);
+        });
+        }
+      
+     
+          
+        
+
+    </script>
+</body>
+</html>
